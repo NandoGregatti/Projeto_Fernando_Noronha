@@ -14,6 +14,7 @@ class A {
 
         void MA1();
         void MA2();
+        void MA3();
 };
 
 void A::MA1() {
@@ -22,6 +23,10 @@ void A::MA1() {
 
 void A::MA2() {
     cout<<"MA2"<<endl;
+};
+
+void A::MA3() {
+    cout<<"Alteração a classe A partir do clone"<<endl;
 };
 
 class B {
@@ -44,4 +49,26 @@ void B::MB1() {
 
 void B::MB2() {
     cout<<"MB2"<<endl;
+};
+
+class C {
+    private:
+        string C1;
+        int C2;
+    public:
+        C() {
+            C1 = "A";
+            C2 = 0;
+        }
+
+        void MC1();
+        void MC2();
+};
+
+void C::MC1() {
+    cout<<"MC1"<<endl;
+};
+
+void C::MC2() {
+    cout<<"MC2"<<endl;
 };
